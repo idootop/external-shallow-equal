@@ -1,14 +1,14 @@
 {
-  "name": "react-shallowequal",
+  "name": "external-shallow-equal",
   "version": "1.0.0",
   "description": "Equivalent to React's internal shallowEqual, allowing external access to React's shallowEqual function.",
-  "homepage": "https://github.com/idootop/react-shallowequal",
+  "homepage": "https://github.com/idootop/external-shallow-equal",
   "bugs": {
-    "url": "https://github.com/idootop/react-shallowequal/issues"
+    "url": "https://github.com/idootop/external-shallow-equal/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idootop/react-shallowequal.git"
+    "url": "git+https://github.com/idootop/external-shallow-equal.git"
   },
   "author": {
     "name": "Del Wang",
@@ -22,7 +22,7 @@
     "react-addons-shallow-compare"
   ],
   "scripts": {
-    "prepublish": "npm pkg fix && npm run build",
+    "prepublish": "npm run build",
     "build": "tsc --module CommonJS && cd dist && mv \"index.js\" \"index.cjs\" && cd ../ && tsc --module esnext"
   },
   "main": "dist/index.cjs",
