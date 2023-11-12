@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/idootop/react-shallowequal"
+    "url": "git+https://github.com/idootop/react-shallowequal.git"
   },
   "author": {
     "name": "Del Wang",
@@ -22,7 +22,7 @@
     "react-addons-shallow-compare"
   ],
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "npm pkg fix && npm run build",
     "build": "tsc --module CommonJS && cd dist && mv \"index.js\" \"index.cjs\" && cd ../ && tsc --module esnext"
   },
   "main": "dist/index.cjs",
